@@ -31,8 +31,7 @@ const routes = [
         path: '/:slug',
         name: 'articleDetail',
         component: ArticleDetailView,
-        props: true,
-        meta: { title: 'Article - Title' }
+        props: true
     },
 ]
 

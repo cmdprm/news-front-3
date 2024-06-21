@@ -3,7 +3,7 @@ import { createMetaManager } from 'vue-meta';
 import App from './App.vue';
 import router from './router';
 import './assets/tailwind.css';
-import axios from './plugins/axios'; // Импорт вашего настроенного axiosInstance
+import axios from './plugins/axios';
 import config from './config/config';
 import 'animate.css';
 
