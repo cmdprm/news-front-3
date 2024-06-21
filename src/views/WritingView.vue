@@ -107,7 +107,32 @@
 import SubscribeBlock from '@/components/SubscribeBlock.vue'
 export default {
     name: 'WritingView',
-    components: { SubscribeBlock }
+    components: { SubscribeBlock },
+    mounted() {
+        this.updateMetaTags()
+    },
+    methods: {
+        updateMetaTags() {
+            document.title = `${this.$domainInfo.name} - Writing`;
+            this.setMetaTag('description', `Have a story to tell? Become a part of our growing community of writers and share your unique perspective with the world.`);
+            this.setMetaTag('keywords', this.$domainInfo.name);
+            this.setMetaTag('robots', 'index, follow');
+        },
+        setMetaTag(name, content) {
+            let element = document.querySelector(`meta[name="${name}"]`);
+            if (!element) {
+                element = document.createElement('meta');
+                element.setAttribute('name', name);
+                document.head.appendChild(element);
+            }
+            element.setAttribute('content', content);
+        },
+        computed: {
+            domainName() {
+                return this.$domainInfo.name;
+            }
+        }
+    }
 }
 </script>
 

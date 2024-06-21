@@ -64,7 +64,7 @@ export default {
         },
         updateMetaTags() {
             if (this.article) {
-                document.title = `${this.article.title} | ${this.domainName}`;
+                document.title = `${this.article.title} - ${this.domainName}`;
                 this.setMetaTag('description', this.article.content);
                 this.setMetaTag('keywords', this.article.keyword);
                 this.setMetaTag('robots', 'index, follow');
