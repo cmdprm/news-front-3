@@ -33,6 +33,11 @@ const routes = [
         component: ArticleDetailView,
         props: true
     },
+    {
+        path: '/:pathMatch(.*)*',
+        name: 'NotFound',
+        component: NotFoundView
+    },
 ]
 
 const router = createRouter({
