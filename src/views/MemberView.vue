@@ -1,5 +1,5 @@
 <template>
-    <div class="mx-10 md:mx-72 mt-10 md:mt-20 mb-20">
+    <div class="mx-10 xl:mx-72 mt-10 md:mt-20 mb-20">
         <div class="animate__animated animate__fadeInUp">
             <p class="text-5xl md:text-8xl font-medium">Stay informed<br>and connected with<br>like-minded readers.</p>
             

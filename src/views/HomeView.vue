@@ -1,5 +1,5 @@
 <template>
-    <div class="mx-10 md:mx-72 mt-10 md:mt-20">
+    <div class="mx-10 xl:mx-72 mt-10 md:mt-20">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-16 animate__animated animate__fadeInUp">
             <div>
                 <p class="text-5xl md:text-8xl font-medium">Thoughts & ideas around the things that actually matter.</p>

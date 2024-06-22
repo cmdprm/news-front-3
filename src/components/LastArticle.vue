@@ -46,7 +46,7 @@ export default {
             return readTime;
         },
         trunTitle(title) {
-            const maxLength = 42;
+            const maxLength = 36;
             return title.length > maxLength ? title.substring(0, maxLength) + '...' : title;
         },
     }
