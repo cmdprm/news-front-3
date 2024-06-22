@@ -1,9 +1,6 @@
 <template>
     <router-link :to="{ name: 'articleDetail', params: { slug: article.slug } }">
-        <div class="relative">
-            <div class="round-link">
-                <svg viewBox="0 0 24 24" height="82" width="82" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 17L17 7M17 7H8M17 7V16" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-            </div>
+        <div>
             <img :src="article.image_url" :alt="article.keyword" class="rounded-lg">
             <div class="mt-5 md:mt-10">
                 <div class="grid grid-cols-3 gap-4 md:gap-10 items-center">

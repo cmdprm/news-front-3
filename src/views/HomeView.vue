@@ -125,27 +125,6 @@ export default {
 </script>
 
 <style>
-    .round-link {
-        aspect-ratio: 1/1;
-        height: 150px;
-        background-color: #1b1b1b;
-        border-radius: 50%;
-        position: absolute;
-        top: 20%;
-        left: 88%;
-        align-content: center;
-        transition: all 0.3s ease-out;
-    }
-
-    .round-link:hover {
-        background-color: #719FAE;
-        transition: all 0.3s ease-out;
-    }
-
-    .round-link svg {
-        margin: 0 auto;
-    }
-
     .divider {
         width: 100%;
         height: 1px;
@@ -162,11 +141,5 @@ export default {
         aspect-ratio: 1/1;
         height: 2px;
         background-color: #000;
-    }
-
-    @media (max-width: 768px) {
-        .round-link {
-            display: none;
-        }
     }
 </style>
