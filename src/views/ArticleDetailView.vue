@@ -56,6 +56,7 @@ export default {
             try {
                 const response = await axiosInstance.get(`/get-article/${this.slug}`);
                 this.article = response.data;
+                console.log(response)
             } catch (error) {
                 console.error('Error fetching article:', error)
                 this.article = null
