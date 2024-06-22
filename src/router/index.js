@@ -34,6 +34,10 @@ const routes = [
         props: true
     },
     {
+        path: '/news-post-sitemap.xml',
+        name: 'sitemap'
+    },
+    {
         path: '/:pathMatch(.*)*',
         name: 'NotFound',
         component: NotFoundView
